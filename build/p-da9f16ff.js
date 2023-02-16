@@ -1,0 +1,1 @@
+function n(n,u,t){let o=null;return u.thumbnail&&(o=`${n}/community/groups/${u.id}/info/${u.thumbnail}`,t&&"public"!==u.access&&(o=`${o}?token=${t}`)),o}function u(n,u,t){let o=null;return u.thumbnail&&(o=`${n}/community/users/${u.username}/info/${u.thumbnail}`,t&&"public"!==u.access&&(o=`${o}?token=${t}`)),o}export{n as a,u as g}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Discussions Playground</title>
+  <meta name="Description"
+    content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#16161d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <script async="" src="https://ga.jspm.io/npm:es-module-shims@1.6.2/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "@arcgis/core/": "https://jsdev.arcgis.com/4.26/@arcgis/core/"
+      }
+    }
+  </script>
+  <style>
+    body>app-root>div>main>stencil-router>stencil-route-switch>stencil-route:nth-child(2)>app-discussion-board>div>arcgis-hub-discussions-idea-board>div>div:nth-child(3)>arcgis-hub-map>div>div.esri-view-root>div.esri-ui.calcite-mode-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>calcite-flow>calcite-flow-item>div.esri-editor__panel-content>div>div>div>div>div>calcite-list>div>div>calcite-list-item:nth-child(2) {
+      display: none !important;
+    }
+
+    body>app-root>div>main>stencil-router>stencil-route-switch>stencil-route:nth-child(2)>app-discussion-board>div>arcgis-hub-discussions-idea-board>div>div:nth-child(3)>arcgis-hub-map>div>div.esri-view-root>div.esri-ui.calcite-mode-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>calcite-flow>calcite-flow-item>div.esri-editor__panel-content>div>div>h5 {
+      display: none !important;
+    }
+
+    body>app-root>div>main>stencil-router>stencil-route-switch>stencil-route:nth-child(2)>app-discussion-board>div>arcgis-hub-discussions-idea-board>div>div:nth-child(3)>arcgis-hub-map>div>div.esri-view-root>div.esri-ui.calcite-mode-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>calcite-flow>calcite-flow-item>div.esri-editor__panel-content>div>div>div>div>div>calcite-list>div>div>h5::before {
+      content: "Add Post to "
+    }
+
+    body>app-root>div>main>stencil-router>stencil-route-switch>stencil-route:nth-child(2)>app-discussion-board>div>arcgis-hub-discussions-idea-board>div>div:nth-child(3)>arcgis-hub-map>div>div.esri-view-root>div.esri-ui.calcite-mode-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>calcite-flow>calcite-flow-item>div.esri-editor__panel-toolbar {
+      display: none !important;
+    }
+
+  </style>
+  <script type="module" src="./build/app.esm.js"></script>
+  <script nomodule="" src="./build/app.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@esri/calcite-components@1.0.0-beta.98/dist/calcite/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+  <link href="./build/app.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="./assets/icon/icon.png">
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+  <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+  <arcgis-app-identity client-id="l5yDhqtiYvc1YStV" redirect-uri="https://tannerjt.github.io/test-stencil-app-hosting"
+    portal="https://qaext.arcgis.com"></arcgis-app-identity>
+  <app-root></app-root>
+</body>
+
+</html>
